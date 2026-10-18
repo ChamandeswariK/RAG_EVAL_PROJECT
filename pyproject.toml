@@ -1,11 +1,16 @@
 [project]
+<<<<<<< HEAD
 name = "llm-sql-eval"
+=======
+name = "rag-eval-project"
+>>>>>>> 7c2571d52d13d21f20316205747b5a86ebda2dd2
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
     { name = "Chamandeswari Kaza", email = "chamandeswari.kaza@gmail.com" }
 ]
+<<<<<<< HEAD
 requires-python = ">=3.13"
 dependencies = [
     "langchain-core>=1.6.12",
@@ -17,6 +22,24 @@ dependencies = [
 
 [project.scripts]
 llm-sql-eval = "llm_sql_eval:main"
+=======
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.5.9",
+    "deepeval>=4.2.9",
+    "langchain>=1.4.6",
+    "langchain-chroma>=1.1.0",
+    "langchain-core>=1.6.10",
+    "langchain-ollama>=1.1.0",
+    "langchain-text-splitters>=1.1.3",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.4",
+    "sentence-transformers>=6.1.0",
+]
+
+[project.scripts]
+rag-eval-project = "rag_eval_project:main"
+>>>>>>> 7c2571d52d13d21f20316205747b5a86ebda2dd2
 
 [build-system]
 requires = ["uv_build>=0.12.0,<0.13.0"]
