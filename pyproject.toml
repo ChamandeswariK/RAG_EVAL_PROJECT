@@ -1,0 +1,23 @@
+[project]
+name = "llm-sql-eval"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Chamandeswari Kaza", email = "chamandeswari.kaza@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-core>=1.6.12",
+    "langchain-ollama>=1.1.0",
+    "langchain-openrouter>=0.2.9",
+    "pandas>=3.0.6",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+llm-sql-eval = "llm_sql_eval:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
