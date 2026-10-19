@@ -17,6 +17,7 @@ THRESHOLD = 0.7
 JUDGE_MODEL = OllamaModel(model="llama3.2:latest")
 embedding_model = OllamaEmbeddings(model="nomic-embed-text:latest")
 
+
 def run(retriever):
     # 1. LOAD the golden set --- the fixed, human-authored truth
     goldens = load_goldens(GOLDEN_PATH)

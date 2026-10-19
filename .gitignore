@@ -3,3 +3,5 @@
 /.venv
 /venv
 /__pycache__
+.deepeval
+.deepeval/.temp_test_run_data.json
